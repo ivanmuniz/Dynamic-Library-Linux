@@ -6,7 +6,7 @@ cp libDyn.so.1.0.1 /usr/lib
 ln -sf /usr/bin/libDyn.so.1.0.1 /usr/lib/libDyn.so  
 ln -sf /usr/bin/libDyn.so.1.0.1 /usr/lib/libDyn.so.1  
   
-Compile yout code using:  
+Compile your code using:  
 gcc -Wall -L/usr/lib/libDyn.so Prueba.c -ldl -lm  
-or
+or  
 gcc -rdynamic Prueba.c -ldl -lm
