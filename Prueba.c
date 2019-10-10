@@ -17,7 +17,7 @@ int main() {
     char *error;
     char* s = NULL;
 
-    lib_handle = dlopen("libDyn.so.1.0.1", RTLD_LAZY);
+    lib_handle = dlopen("libDyn.so", RTLD_LAZY);
     if(!lib_handle) {
         fprintf(stderr, "%s\n", dlerror());
         return(1);
